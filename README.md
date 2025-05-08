@@ -56,7 +56,7 @@ In the above function whatever the value of function parameter is we're always r
 
 ## Q2: What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
 
-In TypeScript, enums are used to define a set of named constants, which are a way of giving nice names to sets of numeric or string values. They're particularly handy for status codes, user roles, directions, and any fixed set of connected variables.
+In TypeScript, enums are used to define a set of named constants, which are a way of giving nice names to sets of numeric or string values. They're particularly handy for status codes, user roles, directions, and any fixed set of connected variables. Enum provides better type safety and better code organization and also improves code readability.
 
 ### Numeric Enum Example:
 ```typescript
