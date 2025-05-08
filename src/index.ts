@@ -6,3 +6,8 @@ function filterByRating(items: { title: string; rating: number }[]): { title: st
     return items.filter(item => item.rating >= 4);
 }
 
+function concatenateArrays<T>(...arrays: T[][]): T[] {
+    const result: T[] = [];
+    arrays.forEach(item => result.push(...item));
+    return result;
+}
