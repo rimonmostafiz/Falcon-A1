@@ -43,5 +43,18 @@ function processValue(value: string | number): number {
     return typeof value === "number" ? value * 2 : value.length;
 }
 
-console.log(processValue("hello")); // Output: 5
-console.log(processValue(10));
+interface Product {
+    name: string;
+    price: number;
+}
+
+function getMostExpensiveProduct(products: Product[]): Product | null {
+    if (products.length === 0) {
+        return null;
+    } else {
+        return products.reduce((maxProduct: Product, currentProduct: Product) => {
+            return currentProduct.price > maxProduct.price ? currentProduct : maxProduct;
+        })
+    }
+}
+
